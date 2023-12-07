@@ -24,7 +24,7 @@ fun main() {
 
     fun part2(input: List<String>): Int {
         return gameResults(input).map { (_, resultMap) ->
-            resultMap.values.map { it.max()}.fold(1, Int::times)
+            resultMap.values.map { it.max() }.fold(1, Int::times)
         }.sum()
 
     }
